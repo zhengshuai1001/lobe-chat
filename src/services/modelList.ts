@@ -11,5 +11,5 @@ export const fetchModelList = async (): Promise<string[]> => {
 
   const modelList: string[] = await res.json();
 
-  return LanguageModelWhiteList.filter((i) => modelList.includes(i));
+  return LanguageModelWhiteList.filter((i) => modelList.lastIndexOf(i));
 };

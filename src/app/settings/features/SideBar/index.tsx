@@ -1,4 +1,4 @@
-import { DraggablePanelBody, Logo } from '@lobehub/ui';
+import { DraggablePanelBody } from '@lobehub/ui';
 import { createStyles } from 'antd-style';
 import { memo } from 'react';
 import { Flexbox } from 'react-layout-kit';
@@ -27,7 +27,12 @@ const SideBar = memo(() => {
       <DraggablePanelBody className={styles.body} style={{ padding: 0 }}>
         <Flexbox className={styles.top} padding={16}>
           <div>
-            <Logo className={styles.logo} extra={'Settings'} size={36} type={'text'} />
+            {/* <Logo className={styles.logo} extra={'Settings'} size={36} type={'text'} /> */}
+            <h3
+              style={{ color: '#080808', fontSize: '22px', fontWeight: 'bold', marginBottom: '0' }}
+            >
+              Chatbot / Settings
+            </h3>
           </div>
         </Flexbox>
         <Flexbox gap={2} style={{ paddingInline: 8 }}>

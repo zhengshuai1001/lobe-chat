@@ -1,6 +1,6 @@
 import { Icon, RenderErrorMessage } from '@lobehub/ui';
 import { Button, Input, Segmented } from 'antd';
-import { KeySquare, SquareAsterisk } from 'lucide-react';
+import { SquareAsterisk } from 'lucide-react';
 import { memo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Flexbox } from 'react-layout-kit';
@@ -33,7 +33,7 @@ const InvalidAccess: RenderErrorMessage['Render'] = memo(({ id }) => {
             label: t('password', { ns: 'common' }),
             value: Tab.Password,
           },
-          { icon: <Icon icon={KeySquare} />, label: 'OpenAI API Key', value: Tab.Api },
+          // { icon: <Icon icon={KeySquare} />, label: 'OpenAI API Key', value: Tab.Api },
         ]}
         style={{ width: '100%' }}
         value={mode}
